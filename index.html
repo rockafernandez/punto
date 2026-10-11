@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Punto — Privacy Policy</title>
+  <style>
+    body { margin: 0; background: #f5f7f6; color: #24312c; font: 17px/1.7 system-ui, sans-serif; }
+    main { max-width: 760px; margin: 40px auto; padding: 32px; background: white; border-radius: 16px; }
+    h1 { font-size: 36px; line-height: 1.2; } h2 { font-size: 22px; margin-top: 28px; }
+    a { color: #176345; overflow-wrap: anywhere; } .meta { color: #58675f; }
+    @media (max-width: 600px) { main { margin: 0; padding: 24px; border-radius: 0; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Punto Privacy Policy</h1>
+  <p class="meta">Effective date: October 10, 2026<br>Operator: Jenner Fernandez</p>
+  <p>Punto is a tennis tournament management project. This policy covers its current WhatsApp connectivity prototype, which receives test messages and sends an automatic acknowledgment. The prototype does not yet save match results or update tournament standings.</p>
+  <h2>Information processed</h2>
+  <p>When you message the configured WhatsApp number, the webhook receives your phone number, message content, message identifier, timestamp, and other metadata supplied by WhatsApp, which may include a profile name. It also receives delivery status events. The current prototype processes text messages from the configured test participant.</p>
+  <h2>How information is used</h2>
+  <p>Information is used to test message delivery, recognize the configured test participant, prevent repeated processing of the same message during a running session, send an acknowledgment, and diagnose connectivity problems. Message content is printed in the operator's local terminal. This prototype does not use messages for advertising or AI model training.</p>
+  <h2>Storage and retention</h2>
+  <p>The current prototype does not write incoming messages to a tournament database. Processed message identifiers are kept in memory and reset when the application stops. Text messages and technical errors may remain visible in terminal output; that output is not automatically deleted by the prototype and may be retained if saved for troubleshooting. Contact the operator to request deletion of test data under the operator's control.</p>
+  <h2>Service providers</h2>
+  <p>Meta's WhatsApp Cloud API delivers messages and sends replies. During local testing, Cloudflare Tunnel forwards webhook requests to the operator's computer. If this policy is hosted on GitHub Pages, GitHub handles requests to this page. These providers may process data and technical logs under their own policies, including outside your country.</p>
+  <ul>
+    <li><a href="https://www.whatsapp.com/legal/privacy-policy">WhatsApp Privacy Policy</a></li>
+    <li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a></li>
+    <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a></li>
+  </ul>
+  <h2>Your choices and deletion requests</h2>
+  <p>Participation in testing is voluntary. You can stop sending messages at any time. For questions, access requests, or deletion requests, email <a href="mailto:jenner.fernandez@outlook.com">jenner.fernandez@outlook.com</a>. Identify the WhatsApp number used for testing and describe your request. The operator may need to verify that the request concerns your data. Deletion requests cover data controlled by the operator; data retained by service providers is governed by their policies.</p>
+  <h2>Security</h2>
+  <p>The prototype checks Meta webhook signatures, keeps credentials in environment variables, and uses an HTTPS callback. Please do not send passwords, payment details, or other sensitive information during testing.</p>
+  <h2>Changes to this policy</h2>
+  <p>This policy will be updated before introducing features that change data handling, such as persistent result storage, additional participants, or processing voice notes and photos. The effective date above identifies the current policy.</p>
+  <h2>Contact</h2>
+  <p>Jenner Fernandez<br><a href="mailto:jenner.fernandez@outlook.com">jenner.fernandez@outlook.com</a></p>
+</main>
+</body>
+</html>
